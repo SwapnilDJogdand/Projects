@@ -1,0 +1,324 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x0000000000000000, pid=1644, tid=29056
+#
+# JRE version:  (14.0.2+12) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (14.0.2+12-46, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# C  0x0000000000000000
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dapplication.home=C:\Program Files\Java\jdk-14.0.2 --add-modules=ALL-DEFAULT -Xms8m -Djdk.module.main=jdk.compiler jdk.compiler/com.sun.tools.javac.Main -d C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\build\classes -classpath C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\build\classes;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\mysql-connector-java-8.0.23\mysql-connector-java-8.0.23.jar;F:\netbeans\netbeans\ide\modules\ext\jaxb\activation.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-api.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-extra-api.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-extra.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-rt.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-tools.jar;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\build\test\classes;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\src\travel\management\Jar;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\src\travel\management\Jar\rs2xml.jar;C:\Users\admin\Documents\Hosp\mysql-connector-java-8.0.23\rs2xml.jar -sourcepath C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\src -target 14 -encoding UTF-8 -g -processorpath C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\mysql-connector-java-8.0.23\mysql-connector-java-8.0.23.jar;F:\netbeans\netbeans\ide\modules\ext\jaxb\activation.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-api.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-extra-api.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-extra.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-rt.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-tools.jar;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\build\test\classes;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\src\travel\management\Jar;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\src\travel\management\Jar\rs2xml.jar;C:\Users\admin\Documents\Hosp\mysql-connector-java-8.0.23\rs2xml.jar;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\build\empty -s C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\build\generated-sources\ap-source-output -source 14 C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\src\travel\managment\system\ViewBookedHotel.java
+
+Host: Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz, 4 cores, 3G,  Windows 10 , 64 bit Build 18362 (10.0.18362.1500)
+Time: Mon Mar 28 21:27:55 2022 India Standard Time elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001a1a0ae2000):  JavaThread "main" [_thread_in_native, id=29056, stack(0x00000080c3400000,0x00000080c3500000)]
+
+Stack: [0x00000080c3400000,0x00000080c3500000],  sp=0x00000080c34fe998,  free space=1018k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  jdk.internal.util.SystemProps$Raw.platformProperties()[Ljava/lang/String;+0 java.base
+j  jdk.internal.util.SystemProps$Raw.<init>()V+5 java.base
+j  jdk.internal.util.SystemProps.initProperties()Ljava/util/Map;+4 java.base
+j  java.lang.System.initPhase1()V+0 java.base
+v  ~StubRoutines::call_stub
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), data execution prevention violation at address 0x0000000000000000
+
+
+Register to memory mapping:
+
+RIP=0x0 is NULL
+RAX=0x0 is NULL
+RBX=0x0 is NULL
+RCX=0x0 is NULL
+RDX=0x0000000000004028 is an unknown value
+RSP=0x00000080c34fe998 is pointing into the stack for thread: 0x000001a1a0ae2000
+RBP=0x00000080c34fed10 is pointing into the stack for thread: 0x000001a1a0ae2000
+RSI=0x0000000000000001 is an unknown value
+RDI=0x000001a1bd1c1301 points into unknown readable memory: 03 2c 00 00 00 52 00
+R8 =0x0 is NULL
+R9 =0x0 is NULL
+R10=0x00007ff835c859a0 ntdll.dll
+R11=0x000001a1bd1c1a90 points into unknown readable memory: 00 00 00 00 00 00 00 00
+R12=0x0000000000000001 is an unknown value
+R13=0x00000000000047ba is an unknown value
+R14=0x000000000000000a is an unknown value
+R15=0x0000000000000744 is an unknown value
+
+
+Registers:
+RAX=0x0000000000000000, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x0000000000004028
+RSP=0x00000080c34fe998, RBP=0x00000080c34fed10, RSI=0x0000000000000001, RDI=0x000001a1bd1c1301
+R8 =0x0000000000000000, R9 =0x0000000000000000, R10=0x00007ff835c859a0, R11=0x000001a1bd1c1a90
+R12=0x0000000000000001, R13=0x00000000000047ba, R14=0x000000000000000a, R15=0x0000000000000744
+RIP=0x0000000000000000, EFLAGS=0x0000000000010202
+
+Top of Stack: (sp=0x00000080c34fe998)
+0x00000080c34fe998:   00007ff81e25b793 0000000000000000
+0x00000080c34fe9a8:   0000000000004028 0000000000000000
+0x00000080c34fe9b8:   0000000000000000 00000080c34fe9e0
+0x00000080c34fe9c8:   00007ff835c7b91f 0000000080004005
+0x00000080c34fe9d8:   0000000000000020 000001a1a0bae7c0
+0x00000080c34fe9e8:   00000080c34fe9f0 0000000000000002
+0x00000080c34fe9f8:   00000000000011a0 0000000000000000
+0x00000080c34fea08:   000001a19e811380 000001a1bd1c2510
+0x00000080c34fea18:   000001a19e810000 000001a19e8102a8
+0x00000080c34fea28:   00007ff835c8130d 0000000000000020
+0x00000080c34fea38:   000001a19e810cc0 0000000000000000
+0x00000080c34fea48:   0000000000000000 0000000000000000
+0x00000080c34fea58:   0000000000000020 000000000000000c
+0x00000080c34fea68:   0000000000000004 000001a19e8d0000
+0x00000080c34fea78:   00000080c34feb39 0000000000000002
+0x00000080c34fea88:   00007ff835c7b434 000001a19e810000 
+
+Instructions: (pc=0x0000000000000000)
+0xffffffffffffff00:   
+
+
+Stack slot to memory mapping:
+stack at sp + 0 slots: 0x00007ff81e25b793 java.dll
+stack at sp + 1 slots: 0x0 is NULL
+stack at sp + 2 slots: 0x0000000000004028 is an unknown value
+stack at sp + 3 slots: 0x0 is NULL
+stack at sp + 4 slots: 0x0 is NULL
+stack at sp + 5 slots: 0x00000080c34fe9e0 is pointing into the stack for thread: 0x000001a1a0ae2000
+stack at sp + 6 slots: 0x00007ff835c7b91f ntdll.dll
+stack at sp + 7 slots: 0x0000000080004005 is an unknown value
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001a1bd1b1740, length=3, elements={
+0x000001a1a0ae2000, 0x000001a1bd1b7000, 0x000001a1bd1b8800
+}
+
+Java Threads: ( => current thread )
+=>0x000001a1a0ae2000 JavaThread "main" [_thread_in_native, id=29056, stack(0x00000080c3400000,0x00000080c3500000)]
+  0x000001a1bd1b7000 JavaThread "Reference Handler" daemon [_thread_blocked, id=20268, stack(0x00000080c3b00000,0x00000080c3c00000)]
+  0x000001a1bd1b8800 JavaThread "Finalizer" daemon [_thread_blocked, id=28032, stack(0x00000080c3c00000,0x00000080c3d00000)]
+
+Other Threads:
+  0x000001a1bd1b3800 VMThread "VM Thread" [stack: 0x00000080c3a00000,0x00000080c3b00000] [id=29704]
+  0x000001a1a0b11800 GCTaskThread "GC Thread#0" [stack: 0x00000080c3500000,0x00000080c3600000] [id=28956]
+  0x000001a1a0b1a000 ConcurrentGCThread "G1 Main Marker" [stack: 0x00000080c3600000,0x00000080c3700000] [id=21588]
+  0x000001a1a0b1d000 ConcurrentGCThread "G1 Conc#0" [stack: 0x00000080c3700000,0x00000080c3800000] [id=1468]
+  0x000001a1a0b37000 ConcurrentGCThread "G1 Refine#0" [stack: 0x00000080c3800000,0x00000080c3900000] [id=30676]
+  0x000001a1a0b38000 ConcurrentGCThread "G1 Young RemSet Sampling" [stack: 0x00000080c3900000,0x00000080c3a00000] [id=28680]
+
+Threads with active compile tasks:
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x00000000c4a00000, size: 950 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ garbage-first heap   total 8192K, used 0K [0x00000000c4a00000, 0x0000000100000000)
+  region size 1024K, 1 young (1024K), 0 survivors (0K)
+ Metaspace       used 1637K, capacity 1928K, committed 2176K, reserved 1062912K
+  class space    used 131K, capacity 384K, committed 384K, reserved 1048576K
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, OA=open archive, CA=closed archive, TAMS=top-at-mark-start (previous, next)
+|   0|0x00000000c4a00000, 0x00000000c4a00000, 0x00000000c4b00000|  0%| F|  |TAMS 0x00000000c4a00000, 0x00000000c4a00000| Untracked 
+|   1|0x00000000c4b00000, 0x00000000c4b00000, 0x00000000c4c00000|  0%| F|  |TAMS 0x00000000c4b00000, 0x00000000c4b00000| Untracked 
+|   2|0x00000000c4c00000, 0x00000000c4c00000, 0x00000000c4d00000|  0%| F|  |TAMS 0x00000000c4c00000, 0x00000000c4c00000| Untracked 
+|   3|0x00000000c4d00000, 0x00000000c4d00000, 0x00000000c4e00000|  0%| F|  |TAMS 0x00000000c4d00000, 0x00000000c4d00000| Untracked 
+|   4|0x00000000c4e00000, 0x00000000c4e00000, 0x00000000c4f00000|  0%| F|  |TAMS 0x00000000c4e00000, 0x00000000c4e00000| Untracked 
+|   5|0x00000000c4f00000, 0x00000000c4f00000, 0x00000000c5000000|  0%| F|  |TAMS 0x00000000c4f00000, 0x00000000c4f00000| Untracked 
+|   6|0x00000000c5000000, 0x00000000c5000000, 0x00000000c5100000|  0%| F|  |TAMS 0x00000000c5000000, 0x00000000c5000000| Untracked 
+|   7|0x00000000c5100000, 0x00000000c510f5d0, 0x00000000c5200000|  6%| E|  |TAMS 0x00000000c5100000, 0x00000000c5100000| Complete 
+
+Card table byte_map: [0x000001a1b8280000,0x000001a1b8460000] _byte_map_base: 0x000001a1b7c5b000
+
+Marking Bits (Prev, Next): (CMBitMap*) 0x000001a1a0b11ef8, (CMBitMap*) 0x000001a1a0b11f38
+ Prev Bits: [0x000001a1b8640000, 0x000001a1b9518000)
+ Next Bits: [0x000001a1b9520000, 0x000001a1ba3f8000)
+
+Polling page: 0x000001a19e870000
+
+Metaspace:
+
+Usage:
+  Non-class:      1.51 MB capacity,     1.47 MB ( 98%) used,    35.91 KB (  2%) free+waste,     1.63 KB ( <1%) overhead. 
+      Class:    384.00 KB capacity,   131.24 KB ( 34%) used,   252.70 KB ( 66%) free+waste,    64 bytes ( <1%) overhead. 
+       Both:      1.88 MB capacity,     1.60 MB ( 85%) used,   288.60 KB ( 15%) free+waste,     1.69 KB ( <1%) overhead. 
+
+Virtual space:
+  Non-class space:       14.00 MB reserved,       1.75 MB ( 13%) committed 
+      Class space:        1.00 GB reserved,     384.00 KB ( <1%) committed 
+             Both:        1.01 GB reserved,       2.13 MB ( <1%) committed 
+
+Chunk freelists:
+   Non-Class:  56.00 KB
+       Class:  0 bytes
+        Both:  56.00 KB
+
+MaxMetaspaceSize: 17179869184.00 GB
+CompressedClassSpaceSize: 1.00 GB
+
+CodeHeap 'non-profiled nmethods': size=120000Kb used=0Kb max_used=0Kb free=120000Kb
+ bounds [0x000001a1b0d50000, 0x000001a1b0fc0000, 0x000001a1b8280000]
+CodeHeap 'profiled nmethods': size=120000Kb used=0Kb max_used=0Kb free=120000Kb
+ bounds [0x000001a1a9820000, 0x000001a1a9a90000, 0x000001a1b0d50000]
+CodeHeap 'non-nmethods': size=5760Kb used=376Kb max_used=376Kb free=5383Kb
+ bounds [0x000001a1a9280000, 0x000001a1a94f0000, 0x000001a1a9820000]
+ total_blobs=128 nmethods=0 adapters=101
+ compilation: enabled
+              stopped_count=0, restarted_count=0
+ full_count=0
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (20 events):
+Event: 0.248 loading class jdk/internal/ref/Cleaner
+Event: 0.248 loading class jdk/internal/ref/Cleaner done
+Event: 0.249 loading class java/lang/ref/ReferenceQueue
+Event: 0.249 loading class java/lang/ref/ReferenceQueue done
+Event: 0.249 loading class java/lang/ref/ReferenceQueue$Null
+Event: 0.249 loading class java/lang/ref/ReferenceQueue$Null done
+Event: 0.249 loading class java/lang/ref/ReferenceQueue$Lock
+Event: 0.249 loading class java/lang/ref/ReferenceQueue$Lock done
+Event: 0.250 Thread 0x000001a1bd1b7000 Thread added: 0x000001a1bd1b7000
+Event: 0.250 loading class java/lang/ref/Reference$1
+Event: 0.250 loading class jdk/internal/access/JavaLangRefAccess
+Event: 0.250 loading class jdk/internal/access/JavaLangRefAccess done
+Event: 0.250 loading class java/lang/ref/Reference$1 done
+Event: 0.250 loading class java/lang/ref/Finalizer$FinalizerThread
+Event: 0.250 loading class java/lang/ref/Finalizer$FinalizerThread done
+Event: 0.251 Thread 0x000001a1bd1b8800 Thread added: 0x000001a1bd1b8800
+Event: 0.251 loading class jdk/internal/util/SystemProps
+Event: 0.251 loading class jdk/internal/util/SystemProps done
+Event: 0.251 loading class jdk/internal/util/SystemProps$Raw
+Event: 0.251 loading class jdk/internal/util/SystemProps$Raw done
+
+
+Dynamic libraries:
+0x00007ff6877c0000 - 0x00007ff6877c7000 	C:\Program Files\Java\jdk-14.0.2\bin\javac.exe
+0x00007ff835c40000 - 0x00007ff835e30000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ff8342e0000 - 0x00007ff834392000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ff832e10000 - 0x00007ff8330b5000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ff8333c0000 - 0x00007ff8334ba000 	C:\Windows\System32\ucrtbase.dll
+0x00007ff82c850000 - 0x00007ff82c868000 	C:\Program Files\Java\jdk-14.0.2\bin\jli.dll
+0x00007ff82b930000 - 0x00007ff82b945000 	C:\Program Files\Java\jdk-14.0.2\bin\VCRUNTIME140.dll
+0x00007ff8352e0000 - 0x00007ff835383000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ff834710000 - 0x00007ff8347ae000 	C:\Windows\System32\msvcrt.dll
+0x00007ff835120000 - 0x00007ff8351b7000 	C:\Windows\System32\sechost.dll
+0x00007ff8345f0000 - 0x00007ff83470f000 	C:\Windows\System32\RPCRT4.dll
+0x00007ff834450000 - 0x00007ff8345e4000 	C:\Windows\System32\USER32.dll
+0x00007ff8334c0000 - 0x00007ff8334e1000 	C:\Windows\System32\win32u.dll
+0x00007ff833cf0000 - 0x00007ff833d16000 	C:\Windows\System32\GDI32.dll
+0x00007ff833220000 - 0x00007ff8333b8000 	C:\Windows\System32\gdi32full.dll
+0x00007ff824ab0000 - 0x00007ff824d34000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.1556_none_9e7e372fe45e41d5\COMCTL32.dll
+0x00007ff832d40000 - 0x00007ff832dde000 	C:\Windows\System32\msvcp_win.dll
+0x00007ff834c20000 - 0x00007ff834f56000 	C:\Windows\System32\combase.dll
+0x00007ff832cb0000 - 0x00007ff832d31000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ff82bd70000 - 0x00007ff82bd7a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ff8352a0000 - 0x00007ff8352ce000 	C:\Windows\System32\IMM32.DLL
+0x00007ff8061a0000 - 0x00007ff80623b000 	C:\Program Files\Java\jdk-14.0.2\bin\msvcp140.dll
+0x00007fffd1960000 - 0x00007fffd247e000 	C:\Program Files\Java\jdk-14.0.2\bin\server\jvm.dll
+0x00007ff8353b0000 - 0x00007ff8353b8000 	C:\Windows\System32\PSAPI.DLL
+0x00007ff830440000 - 0x00007ff830464000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ff812ec0000 - 0x00007ff812ec9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ff834270000 - 0x00007ff8342df000 	C:\Windows\System32\WS2_32.dll
+0x00007ff830410000 - 0x00007ff83043d000 	C:\Windows\SYSTEM32\winmmbase.dll
+0x00007ff832bb0000 - 0x00007ff832bfa000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ff832b00000 - 0x00007ff832b11000 	C:\Windows\System32\kernel.appcore.dll
+0x00007ff82b8e0000 - 0x00007ff82b8ea000 	C:\Program Files\Java\jdk-14.0.2\bin\jimage.dll
+0x00007ff81fdc0000 - 0x00007ff81ffb4000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ff81e790000 - 0x00007ff81e7ba000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ff81e250000 - 0x00007ff81e275000 	C:\Program Files\Java\jdk-14.0.2\bin\java.dll
+0x00007ff81ac20000 - 0x00007ff81ac36000 	C:\Program Files\Java\jdk-14.0.2\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-14.0.2\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.1556_none_9e7e372fe45e41d5;C:\Program Files\Java\jdk-14.0.2\bin\server
+
+VM Arguments:
+jvm_args: -Dapplication.home=C:\Program Files\Java\jdk-14.0.2 --add-modules=ALL-DEFAULT -Xms8m -Djdk.module.main=jdk.compiler 
+java_command: jdk.compiler/com.sun.tools.javac.Main -d C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\build\classes -classpath C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\build\classes;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\mysql-connector-java-8.0.23\mysql-connector-java-8.0.23.jar;F:\netbeans\netbeans\ide\modules\ext\jaxb\activation.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-api.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-extra-api.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-extra.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-rt.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-tools.jar;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\build\test\classes;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\src\travel\management\Jar;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\src\travel\management\Jar\rs2xml.jar;C:\Users\admin\Documents\Hosp\mysql-connector-java-8.0.23\rs2xml.jar -sourcepath C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\src -target 14 -encoding UTF-8 -g -processorpath C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\mysql-connector-java-8.0.23\mysql-connector-java-8.0.23.jar;F:\netbeans\netbeans\ide\modules\ext\jaxb\activation.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-api.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-extra-api.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-extra.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-rt.jar;F:\netbeans\netbeans\enterprise\modules\ext\metro\webservices-tools.jar;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\build\test\classes;C:\Users\admin\Documents\NetBeansProjects\Travel Managment System\src\travel\management\Jar;C:\Users\admin\Documents\NetBeansPr
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 8388608                                   {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 996147200                                 {product} {ergonomic}
+   size_t MaxNewSize                               = 597688320                                 {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {command line}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 996147200                              {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-14.0.2
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-14.0.2\bin;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-14.0.2\bin;C:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin;C:\Program Files\Java\jdk-14.0.2\bin;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-14.0.2\bin;C:\Program Files\nodejs;C:\Users\admin\AppData\Roaming\npm
+USERNAME=admin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 18362 (10.0.18362.1500)
+OS uptime: 20 days 11:14 hours
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 78 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, system-wide physical 3795M (283M free)
+TotalPageFile size 15571M (AvailPageFile size 2M)
+current process WorkingSet (physical memory assigned to process): 16M, peak: 16M
+current process commit charge ("private bytes"): 64M, peak: 65M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (14.0.2+12-46) for windows-amd64 JRE (14.0.2+12-46), built on Jul  9 2020 00:35:52 by "mach5one" with MS VC++ 15.9 (VS2017)
+
+END.
